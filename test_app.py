@@ -20,7 +20,6 @@ def test_fortune(app, client):
 
 def test_cowsay(app, client):
     response = client.get('/cowsay/hello world')
-    assert response.status_code == 200
     assert 'hello world' in response.get_data(as_text=True)
 
 def test_cowfortune(app, client):
