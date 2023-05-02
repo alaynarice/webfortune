@@ -9,8 +9,6 @@ RUN apt-get install -y python3-pip
 ENV PATH=$PATH:/usr/games
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
-
-FROM python:3.9-slim-buster
   
 WORKDIR /app
 
